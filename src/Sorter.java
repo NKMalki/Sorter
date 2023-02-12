@@ -23,7 +23,7 @@ public class Sorter {
             arr[i] = temp;
         }
     }
-    void insertionSort(int array[]) {
+   public void insertionSort(int array[]) {
         int size = array.length;
 
         for (int step = 1; step < size; step++) {
@@ -35,5 +35,8 @@ public class Sorter {
             }
             array[j + 1] = key;
         }
+    }
+    public void sort(int[ ] array ){
+        insertionSort(array);
     }
 }
