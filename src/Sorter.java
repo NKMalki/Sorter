@@ -5,7 +5,7 @@ public class Sorter {
         for (int i = 0; i < array.length; i++){
             array[i] = (int) (Math.random() * 100);
         }
-        selectionSort(array);
+        sort(array);
         for (int i : array) {
             System.out.print(i + " ");
         }
@@ -36,7 +36,7 @@ public class Sorter {
             array[j + 1] = key;
         }
     }
-    public void sort(int[ ] array ){
-        insertionSort(array);
+    public static void sort(int[] array ){
+        selectionSort(array);
     }
 }
